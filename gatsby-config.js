@@ -6,7 +6,7 @@ module.exports = {
     position: 'This a position',
     description: 'This is a description about.',
     author: 'Louzada',
-    siteURL: 'http://localhost:8000',
+    siteURL: 'https://louzada.netlify.app/',
     contact: [
       {
         label: 'Linkedin',
