@@ -35,3 +35,5 @@ export const Picture = styled.picture`
     border: 5px solid #3eb43e;
   }
 `;
+
+export default Container;

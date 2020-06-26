@@ -7,7 +7,7 @@ import { Container } from './styles';
 const Welcome: React.FC<{}> = () => {
   const {
     site: {
-      siteMetadata: { author, siteURL, contact },
+      siteMetadata: { author, contact },
     },
     welcomeImage,
   } = useStaticQuery(
@@ -27,7 +27,6 @@ const Welcome: React.FC<{}> = () => {
               label
               linkTo
             }
-            siteURL
           }
         }
       }
@@ -39,7 +38,7 @@ const Welcome: React.FC<{}> = () => {
         <h1>WELCOME TO MY WORLD.</h1>
         <figure>
           <img
-            src={`${siteURL}${welcomeImage.childImageSharp.fluid.originalImg}`}
+            src={welcomeImage.childImageSharp.fluid.originalImg}
             alt={`${author} Avatar`}
           />
         </figure>

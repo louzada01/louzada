@@ -6,7 +6,7 @@ import { Conatainer, Logo } from './styles';
 const Header: React.FC = () => {
   const {
     site: {
-      siteMetadata: { author, siteURL },
+      siteMetadata: { author },
     },
     avatarImage,
   } = useStaticQuery(
@@ -22,7 +22,6 @@ const Header: React.FC = () => {
         site {
           siteMetadata {
             author
-            siteURL
           }
         }
       }
@@ -33,9 +32,7 @@ const Header: React.FC = () => {
     <Conatainer>
       <Logo to="/">
         <img
-          src={`
-            ${siteURL}${avatarImage.childImageSharp.fluid.originalImg}
-            `}
+          src={avatarImage.childImageSharp.fluid.originalImg}
           alt="Avatar Louzada"
         />
       </Logo>

@@ -29,8 +29,8 @@ module.exports = {
         linkTo: 'https://instagram.com/louzada01',
       },
       {
-        label: 'IO Talks',
-        lintTo: 'https://iotalks.com.br/',
+        label: 'IO-Talks',
+        linkTo: 'https://iotalks.com.br/',
       },
     ],
   },

@@ -6,12 +6,7 @@ import Layout from '@/components/Layout';
 import { Container, Picture } from './404.styles';
 
 const NotFound: React.FC<{}> = () => {
-  const {
-    site: {
-      siteMetadata: { siteURL },
-    },
-    searchImage,
-  } = useStaticQuery(
+  const { searchImage } = useStaticQuery(
     graphql`
       query {
         searchImage: file(relativePath: { eq: "search_avatar.png" }) {
@@ -19,11 +14,6 @@ const NotFound: React.FC<{}> = () => {
             fluid {
               originalImg
             }
-          }
-        }
-        site {
-          siteMetadata {
-            siteURL
           }
         }
       }
@@ -35,7 +25,7 @@ const NotFound: React.FC<{}> = () => {
       <Container>
         <Picture>
           <img
-            src={`${siteURL}${searchImage.childImageSharp.fluid.originalImg}`}
+            src={searchImage.childImageSharp.fluid.originalImg}
             alt="Avatar com lupa"
           />
         </Picture>
