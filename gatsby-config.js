@@ -13,12 +13,24 @@ module.exports = {
         linkTo: 'https://www.linkedin.com/in/joao-louzada/',
       },
       {
-        label: 'Instagram',
-        linkTo: 'https://instagram.com/louzada01',
+        label: 'GitHub',
+        linkTo: 'https://github.com/louzada01',
       },
       {
         label: 'Email',
         linkTo: 'mailto:rootlouzada@gmail.com',
+      },
+      {
+        label: 'Twitter',
+        linkTo: 'https://twitter.com/louzada01',
+      },
+      {
+        label: 'Instagram',
+        linkTo: 'https://instagram.com/louzada01',
+      },
+      {
+        label: 'IO Talks',
+        lintTo: 'https://iotalks.com.br/',
       },
     ],
   },

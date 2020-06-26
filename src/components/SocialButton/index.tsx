@@ -1,5 +1,7 @@
 import React from 'react';
 import {
+  FiGithub,
+  FiTwitter,
   FiGlobe,
   FiLinkedin,
   FiInstagram,
@@ -22,6 +24,10 @@ const SocialButton: React.FC<SocialButtonInterface> = ({ linkTo, text }) => {
         return <FiInstagram />;
       case `Email`:
         return <FiMail />;
+      case `Twitter`:
+        return <FiTwitter />;
+      case `GitHub`:
+        return <FiGithub />;
       default:
         return <FiGlobe />;
     }
