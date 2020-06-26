@@ -3,12 +3,11 @@ import { Link } from 'gatsby';
 
 export const Conatainer = styled.header`
   width: 100%;
-  height: 20vh;
-  max-height: 80px;
+  height: 60px;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #2a292d;
 
   p {
     margin-left: 10px;

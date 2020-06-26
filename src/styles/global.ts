@@ -10,8 +10,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html, body {
-    overflow: hidden;
-    background: #0A0705;
+    height: 100vh;
+    background: #0a0705;
     color: #FFF;
     -webkit-font-smoothing: antialiased;
   }
