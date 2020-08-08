@@ -29,6 +29,10 @@ module.exports = {
         linkTo: 'https://instagram.com/louzada01',
       },
       {
+        label: 'Spotify',
+        linkTo: 'https://open.spotify.com/user/12173950264?si=5YjFHGjGRf2YP59CX9fJEQ',
+      },
+      {
         label: 'IO-Talks',
         linkTo: 'https://iotalks.com.br/',
       },

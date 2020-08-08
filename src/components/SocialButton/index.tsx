@@ -1,13 +1,14 @@
 import React from 'react';
 import {
-  FiGithub,
-  FiTwitter,
-  FiGlobe,
-  FiLinkedin,
-  FiInstagram,
-  FiMail,
-  FiArrowRight,
-} from 'react-icons/fi';
+  FaGithub,
+  FaTwitter,
+  FaGlobeAmericas,
+  FaLinkedin,
+  FaInstagram,
+  FaEnvelope,
+  FaArrowRight,
+  FaSpotify,
+} from 'react-icons/fa';
 import { Container } from './styles';
 
 interface SocialButtonInterface {
@@ -19,25 +20,27 @@ const SocialButton: React.FC<SocialButtonInterface> = ({ linkTo, text }) => {
   const SwitchIcon = (key: string): any => {
     switch (key) {
       case `Linkedin`:
-        return <FiLinkedin />;
+        return <FaLinkedin />;
       case `Instagram`:
-        return <FiInstagram />;
+        return <FaInstagram />;
       case `Email`:
-        return <FiMail />;
+        return <FaEnvelope />;
       case `Twitter`:
-        return <FiTwitter />;
+        return <FaTwitter />;
       case `GitHub`:
-        return <FiGithub />;
+        return <FaGithub />;
+      case `Spotify`:
+        return <FaSpotify />;
       default:
-        return <FiGlobe />;
+        return <FaGlobeAmericas />;
     }
   };
 
   return (
-    <Container href={linkTo}>
+    <Container href={linkTo} target="_blank" rel="noopener noreferrer">
       {SwitchIcon(text)}
       <p>{text}</p>
-      <FiArrowRight />
+      <FaArrowRight />
     </Container>
   );
 };
