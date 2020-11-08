@@ -35,19 +35,23 @@ const Welcome: React.FC<{}> = () => {
   return (
     <>
       <Container>
-        <h1>WELCOME TO MY WORLD.</h1>
+        <h1>ONDE ME ENCONTRAR</h1>
         <figure>
           <img
             src={welcomeImage.childImageSharp.fluid.originalImg}
             alt={`${author} Avatar`}
           />
         </figure>
-        <h4>Seja muito bem vindo ao meu site pessoal!</h4>
+        <h4>Links úteis</h4>
+        {contact.map((link) => (
+          <SocialButton
+            key={link.label}
+            text={link.label}
+            linkTo={link.linkTo}
+          />
+        ))}
         <h6>By: {author}</h6>
       </Container>
-      {contact.map((link) => (
-        <SocialButton key={link.label} text={link.label} linkTo={link.linkTo} />
-      ))}
     </>
   );
 };
