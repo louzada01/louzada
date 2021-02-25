@@ -9,6 +9,11 @@ module.exports = {
     siteURL: 'https://louzada.netlify.app/',
     contact: [
       {
+        label: 'ClubHouse Playlist',
+        linkTo:
+          'https://open.spotify.com/playlist/0RKzPgBL7X564jVIopmci9?si=VCIG0OFKSCy8wxLMAIDzGQ',
+      },
+      {
         label: 'Instagram',
         linkTo: 'https://instagram.com/rootlouzada',
       },
