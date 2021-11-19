@@ -6,7 +6,7 @@ module.exports = {
     position: 'This a position',
     description: 'This is a description about.',
     author: 'Louzada',
-    siteURL: 'https://louzada.netlify.app/',
+    siteURL: 'https://louzada.me/',
     contact: [
       {
         label: 'ClubHouse Playlist',
@@ -15,7 +15,7 @@ module.exports = {
       },
       {
         label: 'Instagram',
-        linkTo: 'https://instagram.com/rootlouzada',
+        linkTo: 'https://instagram.com/uailouzin',
       },
       {
         label: 'Spotify',
