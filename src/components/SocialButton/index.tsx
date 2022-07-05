@@ -8,6 +8,7 @@ import {
   FaEnvelope,
   FaArrowRight,
   FaSpotify,
+  FaHeart
 } from 'react-icons/fa';
 import { Container } from './styles';
 
@@ -31,6 +32,8 @@ const SocialButton: React.FC<SocialButtonInterface> = ({ linkTo, text }) => {
         return <FaGithub />;
       case `Spotify`:
         return <FaSpotify />;
+      case `He4rt Developers`:
+        return <FaHeart />
       default:
         return <FaGlobeAmericas />;
     }
