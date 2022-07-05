@@ -9,9 +9,8 @@ module.exports = {
     siteURL: 'https://louzada.me/',
     contact: [
       {
-        label: 'ClubHouse Playlist',
-        linkTo:
-          'https://open.spotify.com/playlist/0RKzPgBL7X564jVIopmci9?si=VCIG0OFKSCy8wxLMAIDzGQ',
+        label: 'He4rt Developers',
+        linkTo: 'https://heartdevs.com/',
       },
       {
         label: 'Instagram',
@@ -33,10 +32,6 @@ module.exports = {
       {
         label: 'Email',
         linkTo: 'mailto:rootlouzada@gmail.com',
-      },
-      {
-        label: 'IO-Talks',
-        linkTo: 'https://iotalks.com.br/',
       },
     ],
   },
