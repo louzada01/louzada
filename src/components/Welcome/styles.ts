@@ -3,23 +3,50 @@ import styled from 'styled-components';
 export const Container = styled.section`
   display: flex;
   flex: 1;
-  width: min(601px, 100%);
-  flex-direction: column;
+  height: 95vh;
+  width: 100vw;
   align-items: center;
-  justify-content: center;
-  padding: 0 10px;
-  color: #3eb43e;
+  color: #141414;
+
+  .welcome-avatar {
+    width: 320px;
+  }
 
   h1 {
-    font-size: 42px;
-    text-align: center;
+    font-size: clamp(2rem, 2.5vw, 4rem);
     font-weight: 700;
+  }
+  h2 {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-weight: 300;
   }
 
   h4,
   h6 {
-    text-align: center;
     margin: 10px 0;
     font-weight: 700;
+  }
+  section {
+    width: 100%;
+  }
+  .social-content {
+    margin-top: 1rem;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(6, 72px);
+    grid-auto-flow: column;
+    grid-gap: 1rem;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    .social-content {
+      grid-template-columns: repeat(3, 72px);
+      grid-auto-flow: row;
+    }
   }
 `;

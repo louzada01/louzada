@@ -3,10 +3,10 @@ const path = require(`path`);
 module.exports = {
   siteMetadata: {
     title: 'Louzada',
-    position: 'This a position',
-    description: 'This is a description about.',
+    description: 'louzada01.',
     author: 'Louzada',
     siteURL: 'https://louzada.me/',
+    twitterUsername: 'uailouzin',
     contact: [
       {
         label: 'He4rt Developers',
@@ -30,8 +30,8 @@ module.exports = {
         linkTo: 'https://www.linkedin.com/in/joao-louzada/',
       },
       {
-        label: 'Email',
-        linkTo: 'mailto:rootlouzada@gmail.com',
+        label: 'Twitter',
+        linkTo: 'https://twitter.com/uailouzin',
       },
     ],
   },

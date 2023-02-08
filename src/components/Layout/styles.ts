@@ -2,10 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  flex: 1;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px;
+
+  footer {
+    span {
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
 `;
 
 export const Header = styled.div`
@@ -14,7 +19,6 @@ export const Header = styled.div`
   justify-content: center;
   margin-bottom: 10px;
   width: 100%;
-  max-width: 960px;
   max-height: 80px;
 `;
 

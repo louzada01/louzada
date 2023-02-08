@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 export const Conatainer = styled.header`
   width: 100%;
   height: 60px;
-  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;

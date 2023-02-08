@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { GlobalStyle } from '@/styles/global';
-import Header from '@/components/Header/index';
 
 import { Container, Content } from './styles';
 
@@ -12,8 +11,10 @@ interface LayoutInterface {
 const Layout: React.FC<LayoutInterface> = ({ children }) => (
   <Container>
     <GlobalStyle />
-    <Header />
     <Content>{children}</Content>
+    <footer>
+      <span>©João Victor Louzada. all rights reserved</span>
+    </footer>
   </Container>
 );
 

@@ -33,26 +33,26 @@ const Welcome: React.FC<{}> = () => {
     `,
   );
   return (
-    <>
-      <Container>
-        <h1>ONDE ME ENCONTRAR</h1>
-        <figure>
-          <img
-            src={welcomeImage.childImageSharp.fluid.originalImg}
-            alt={`${author} Avatar`}
-          />
-        </figure>
-        <h4>Links úteis</h4>
-        {contact.map((link) => (
-          <SocialButton
-            key={link.label}
-            text={link.label}
-            linkTo={link.linkTo}
-          />
-        ))}
-        <h6>By: {author}</h6>
-      </Container>
-    </>
+    <Container>
+      <img
+        className="welcome-avatar"
+        src={welcomeImage.childImageSharp.fluid.originalImg}
+        alt={`${author} Avatar`}
+      />
+      <section>
+        <h1>João Victor Louzada</h1>
+        <h2>- Louzin</h2>
+        <div className="social-content">
+          {contact.map((link) => (
+            <SocialButton
+              key={link.label}
+              text={link.label}
+              linkTo={link.linkTo}
+            />
+          ))}
+        </div>
+      </section>
+    </Container>
   );
 };
 

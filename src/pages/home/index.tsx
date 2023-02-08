@@ -2,14 +2,12 @@ import React from 'react';
 
 import Layout from '@/components/Layout';
 import Welcome from '@/components/Welcome';
-
-import { Container } from './styles';
+import SEO from '@/components/SEO';
 
 const Home: React.FC<{}> = () => (
   <Layout>
-    <Container>
-      <Welcome />
-    </Container>
+    <SEO />
+    <Welcome />
   </Layout>
 );
 

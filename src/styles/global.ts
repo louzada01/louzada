@@ -10,9 +10,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html, body {
-    height: 100vh;
-    background: #0a0705;
-    color: #FFF;
+    max-height: 100vh;
+    background: #E7E7E7;
+    color: #141414;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -20,10 +20,11 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    color: #FFF;
+    color: #141414;
   }
 
   h1,h2,h3,h4,h5,h6,strong {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
   }
 

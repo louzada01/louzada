@@ -2,15 +2,14 @@ import styled from 'styled-components';
 
 export const Container = styled.a`
   display: flex;
-  width: 90%;
-  height: 55px;
+  height: 72px;
+  width: 72px;
   align-items: center;
-  justify-content: space-between;
-  border: 1px solid #3eb43e;
+  justify-content: center;
+  border: 1px solid #fafafa;
   border-radius: 10px;
-  color: #3eb43e;
-  background-color: #0a0705;
-  margin: 5px 0;
+  color: #fafafa;
+  background-color: #141414;
   text-decoration: none;
 
   font-size: 22px;
@@ -18,18 +17,10 @@ export const Container = styled.a`
   transition: background-color 0.2s ease-in;
 
   :hover {
-    color: #0a0705;
-    background-color: #3eb43e;
+    color: #141414;
+    background-color: #fafafa;
   }
-
-  p {
-    font-weight: 700;
-    line-height: 22px;
-    flex: 1;
-  }
-
   svg {
-    margin: 0 30px;
     padding: 0;
   }
 `;

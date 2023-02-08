@@ -6,9 +6,8 @@ import {
   FaLinkedin,
   FaInstagram,
   FaEnvelope,
-  FaArrowRight,
   FaSpotify,
-  FaHeart
+  FaHeart,
 } from 'react-icons/fa';
 import { Container } from './styles';
 
@@ -21,29 +20,27 @@ const SocialButton: React.FC<SocialButtonInterface> = ({ linkTo, text }) => {
   const SwitchIcon = (key: string): any => {
     switch (key) {
       case `Linkedin`:
-        return <FaLinkedin />;
+        return <FaLinkedin size={25} />;
       case `Instagram`:
-        return <FaInstagram />;
+        return <FaInstagram size={25} />;
       case `Email`:
-        return <FaEnvelope />;
+        return <FaEnvelope size={25} />;
       case `Twitter`:
-        return <FaTwitter />;
+        return <FaTwitter size={25} />;
       case `GitHub`:
-        return <FaGithub />;
+        return <FaGithub size={25} />;
       case `Spotify`:
-        return <FaSpotify />;
+        return <FaSpotify size={25} />;
       case `He4rt Developers`:
-        return <FaHeart />
+        return <FaHeart size={25} />;
       default:
-        return <FaGlobeAmericas />;
+        return <FaGlobeAmericas size={25} />;
     }
   };
 
   return (
     <Container href={linkTo} target="_blank" rel="noopener noreferrer">
       {SwitchIcon(text)}
-      <p>{text}</p>
-      <FaArrowRight />
     </Container>
   );
 };
