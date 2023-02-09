@@ -39,6 +39,7 @@ export const Container = styled.section`
   }
   @media (max-width: 768px) {
     flex-direction: column;
+    padding-top: 3rem;
     h1,
     h2 {
       text-align: center;

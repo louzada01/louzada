@@ -13,15 +13,6 @@ export const Container = styled.div`
   }
 `;
 
-export const Header = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  width: 100%;
-  max-height: 80px;
-`;
-
 export const Content = styled.div`
   display: flex;
   align-items: center;
@@ -29,4 +20,17 @@ export const Content = styled.div`
   width: 100%;
   max-width: 960px;
   color: #fff;
+`;
+
+export const PubliBar = styled.a`
+  width: 100vw;
+  position: absolute;
+  padding: 1rem;
+  background-color: #782bf1;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  :hover {
+    cursor: pointer;
+  }
 `;
