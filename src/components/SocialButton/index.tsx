@@ -8,6 +8,7 @@ import {
   FaEnvelope,
   FaSpotify,
   FaHeart,
+  FaCalendarCheck,
 } from 'react-icons/fa';
 import { Container } from './styles';
 
@@ -33,6 +34,8 @@ const SocialButton: React.FC<SocialButtonInterface> = ({ linkTo, text }) => {
         return <FaSpotify size={25} />;
       case `He4rt Developers`:
         return <FaHeart size={25} />;
+      case `Reunião`:
+        return <FaCalendarCheck size={25} />;
       default:
         return <FaGlobeAmericas size={25} />;
     }
@@ -41,6 +44,7 @@ const SocialButton: React.FC<SocialButtonInterface> = ({ linkTo, text }) => {
   return (
     <Container href={linkTo} target="_blank" rel="noopener noreferrer">
       {SwitchIcon(text)}
+      <span>{text}</span>
     </Container>
   );
 };

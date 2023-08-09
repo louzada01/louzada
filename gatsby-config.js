@@ -33,6 +33,10 @@ module.exports = {
         label: 'Twitter',
         linkTo: 'https://twitter.com/uailouzin',
       },
+      {
+        label: 'Reunião',
+        linkTo: 'https://calendar.app.google/Vd1pmF8oDRerVfpc6'
+      }
     ],
   },
   plugins: [

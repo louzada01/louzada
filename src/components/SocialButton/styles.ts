@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 export const Container = styled.a`
   display: flex;
-  height: 72px;
+  flex-direction: column;
+  height: 100px;
   width: 72px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   border: 1px solid #fafafa;
   border-radius: 10px;
   color: #fafafa;
@@ -22,5 +23,8 @@ export const Container = styled.a`
   }
   svg {
     padding: 0;
+  }
+  span {
+    font-size: 8px;
   }
 `;
